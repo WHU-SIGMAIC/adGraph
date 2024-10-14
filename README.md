@@ -25,7 +25,7 @@ DTK requirement:
 It is easy to install adGRAPH from source. As a convenience, a `build.sh` script is provided. Run the script as shown below to download the source code, build and install the library.  Note that the library will be installed to the location set in `$DTK_ROOT` (eg. `export DTK_ROOT=/usr/local/dtk`). These instructions were tested on Ubuntu 18.04.
 
   ```bash
-  git clone https://anonymous.4open.science/r/adGRAPH-E319.git
+  git clone https://github.com/WHU-SIGMAIC/adGraph
   cd adGRAPH
   export DTK_ROOT=/usr/local/dtk
   ./build.sh  # build the adGRAPH library and install it to $DTK_ROOT (you may need to add the sudo prefix)
