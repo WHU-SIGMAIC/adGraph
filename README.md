@@ -51,7 +51,7 @@ To install adGRAPH from source, ensure the dependencies are met and follow the s
   export adGRAPH_HOME=$(pwd)/adGRAPH
 
   # Download the adGRAPH repo
-  git clone https://anonymous.4open.science/r/adGRAPH-E319.git $adGRAPH_HOME
+  git clone https://github.com/WHU-SIGMAIC/adGraph $adGRAPH_HOME
   ```
 
 2) Build and install `libadGRAPH_rapids.so`. CMake depends on the `hipcc` executable being on your path or defined in `$HIPCXX`.
