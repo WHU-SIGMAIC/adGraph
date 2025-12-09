@@ -1,0 +1,109 @@
+SLURM_JOB_NODELIST=f16r1n11
+SLURM_NODELIST=f16r1n11
+Currently Loaded Modulefiles:
+  1) compiler/gcc/8.2.0      3) compiler/cmake/3.23.3
+  2) compiler/dtk/24.04
+Set DTK_ROOT to default path: /public/software/compiler/rocm/dtk-24.04
+HIP/ROCm environment configured:
+  DTK_ROOT: /public/software/compiler/rocm/dtk-24.04
+  HIP_PATH: /public/software/compiler/rocm/dtk-24.04
+  CC: /public/software/compiler/rocm/dtk-24.04/llvm/bin/clang
+  CXX: /public/software/compiler/rocm/dtk-24.04/bin/hipcc
+  HIPCC: /public/software/compiler/rocm/dtk-24.04/bin/hipcc
+  BUILD_TYPE: Release
+
+Checking for required tools:
+  ✓ hipcc found: /public/software/compiler/rocm/dtk-24.04/bin/hipcc
+HIP version: 4.4.0-0
+clang version 15.0.0 (http://10.15.3.7/dcutoolkit/driverruntime/llvm-project.git 9925b195b91523c38d779c83bd3d5c2ca6c99206)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /public/software/compiler/rocm/dtk-24.04/llvm/bin
+
+
+Environment setup complete!
+You can now run: ./build_hip.sh
+Building with HIP/ROCm
+DTK_ROOT: /public/software/compiler/rocm/dtk-24.04
+Build type: Release
+-- System architecture is x86_64
+-- GTEST: Enabling the GLIBCXX11 ABI
+CMake Warning (dev) in CMakeLists.txt:
+  No project() command is present.  The top-level CMakeLists.txt file must
+  contain a literal, direct call to the project() command.  Add a line of
+  code such as
+
+    project(ProjectName)
+
+  near the top of the file, but after cmake_minimum_required().
+
+  CMake is pretending there is a "project(Project)" command on the first
+  line.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /public/home/xdcup_a15/projects/adGraph/cpp/build/googletest
+-- GTEST BUILD: Enabling Parallel CMake build with all threads
+[100%] Built target GoogleTest
+-- GoogleTest installed here: /public/home/xdcup_a15/projects/adGraph/cpp/build/googletest/install
+-- Google C++ Testing Framework (Google Test) found in /public/home/xdcup_a15/projects/adGraph/cpp/build/googletest
+-- ADD TEST: NVGRAPH_TEST from /public/home/xdcup_a15/projects/adGraph/cpp/tests/nvgraph_test.cpp
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /public/home/xdcup_a15/projects/adGraph/cpp/build
+
+===== =====
+Building libnvgraph
+===== =====
+
+Install target: install
+/public/software/compiler/cmake-3.23.3/bin/cmake -S/public/home/xdcup_a15/projects/adGraph/cpp -B/public/home/xdcup_a15/projects/adGraph/cpp/build --check-build-system CMakeFiles/Makefile.cmake 0
+/public/software/compiler/cmake-3.23.3/bin/cmake -E cmake_progress_start /public/home/xdcup_a15/projects/adGraph/cpp/build/CMakeFiles /public/home/xdcup_a15/projects/adGraph/cpp/build//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[1]: Entering directory `/public/home/xdcup_a15/projects/adGraph/cpp/build'
+make  -f CMakeFiles/nvgraph.dir/build.make CMakeFiles/nvgraph.dir/depend
+make[2]: Entering directory `/public/home/xdcup_a15/projects/adGraph/cpp/build'
+cd /public/home/xdcup_a15/projects/adGraph/cpp/build && /public/software/compiler/cmake-3.23.3/bin/cmake -E cmake_depends "Unix Makefiles" /public/home/xdcup_a15/projects/adGraph/cpp /public/home/xdcup_a15/projects/adGraph/cpp /public/home/xdcup_a15/projects/adGraph/cpp/build /public/home/xdcup_a15/projects/adGraph/cpp/build /public/home/xdcup_a15/projects/adGraph/cpp/build/CMakeFiles/nvgraph.dir/DependInfo.cmake --color=
+Dependee "/public/home/xdcup_a15/projects/adGraph/cpp/build/CMakeFiles/nvgraph.dir/DependInfo.cmake" is newer than depender "/public/home/xdcup_a15/projects/adGraph/cpp/build/CMakeFiles/nvgraph.dir/depend.internal".
+Dependee "/public/home/xdcup_a15/projects/adGraph/cpp/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/public/home/xdcup_a15/projects/adGraph/cpp/build/CMakeFiles/nvgraph.dir/depend.internal".
+Scanning dependencies of target nvgraph
+Dependencies file "CMakeFiles/nvgraph.dir/src/csr_graph.cpp.o.d" is newer than depends file "/public/home/xdcup_a15/projects/adGraph/cpp/build/CMakeFiles/nvgraph.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/nvgraph.dir/src/nvgraph_cublas.cpp.o.d" is newer than depends file "/public/home/xdcup_a15/projects/adGraph/cpp/build/CMakeFiles/nvgraph.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/nvgraph.dir/src/nvgraph_cusparse.cpp.o.d" is newer than depends file "/public/home/xdcup_a15/projects/adGraph/cpp/build/CMakeFiles/nvgraph.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/nvgraph.dir/src/triangles_counting.cpp.o.d" is newer than depends file "/public/home/xdcup_a15/projects/adGraph/cpp/build/CMakeFiles/nvgraph.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/nvgraph.dir/src/valued_csr_graph.cpp.o.d" is newer than depends file "/public/home/xdcup_a15/projects/adGraph/cpp/build/CMakeFiles/nvgraph.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/nvgraph.dir/thirdparty/cnmem/src/cnmem.cpp.o.d" is newer than depends file "/public/home/xdcup_a15/projects/adGraph/cpp/build/CMakeFiles/nvgraph.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target nvgraph
+make[2]: Leaving directory `/public/home/xdcup_a15/projects/adGraph/cpp/build'
+make  -f CMakeFiles/nvgraph.dir/build.make CMakeFiles/nvgraph.dir/build
+make[2]: Entering directory `/public/home/xdcup_a15/projects/adGraph/cpp/build'
+make[2]: Nothing to be done for `CMakeFiles/nvgraph.dir/build'.
+make[2]: Leaving directory `/public/home/xdcup_a15/projects/adGraph/cpp/build'
+[ 94%] Built target nvgraph
+make  -f tests/CMakeFiles/NVGRAPH_TEST.dir/build.make tests/CMakeFiles/NVGRAPH_TEST.dir/depend
+make[2]: Entering directory `/public/home/xdcup_a15/projects/adGraph/cpp/build'
+cd /public/home/xdcup_a15/projects/adGraph/cpp/build && /public/software/compiler/cmake-3.23.3/bin/cmake -E cmake_depends "Unix Makefiles" /public/home/xdcup_a15/projects/adGraph/cpp /public/home/xdcup_a15/projects/adGraph/cpp/tests /public/home/xdcup_a15/projects/adGraph/cpp/build /public/home/xdcup_a15/projects/adGraph/cpp/build/tests /public/home/xdcup_a15/projects/adGraph/cpp/build/tests/CMakeFiles/NVGRAPH_TEST.dir/DependInfo.cmake --color=
+Dependencies file "tests/CMakeFiles/NVGRAPH_TEST.dir/nvgraph_test.cpp.o.d" is newer than depends file "/public/home/xdcup_a15/projects/adGraph/cpp/build/tests/CMakeFiles/NVGRAPH_TEST.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target NVGRAPH_TEST
+make[2]: Leaving directory `/public/home/xdcup_a15/projects/adGraph/cpp/build'
+make  -f tests/CMakeFiles/NVGRAPH_TEST.dir/build.make tests/CMakeFiles/NVGRAPH_TEST.dir/build
+make[2]: Entering directory `/public/home/xdcup_a15/projects/adGraph/cpp/build'
+make[2]: Nothing to be done for `tests/CMakeFiles/NVGRAPH_TEST.dir/build'.
+make[2]: Leaving directory `/public/home/xdcup_a15/projects/adGraph/cpp/build'
+[100%] Built target NVGRAPH_TEST
+make[1]: Leaving directory `/public/home/xdcup_a15/projects/adGraph/cpp/build'
+/public/software/compiler/cmake-3.23.3/bin/cmake -E cmake_progress_start /public/home/xdcup_a15/projects/adGraph/cpp/build/CMakeFiles 0
+make  -f CMakeFiles/Makefile2 preinstall
+make[1]: Entering directory `/public/home/xdcup_a15/projects/adGraph/cpp/build'
+make[1]: Nothing to be done for `preinstall'.
+make[1]: Leaving directory `/public/home/xdcup_a15/projects/adGraph/cpp/build'
+Install the project...
+/public/software/compiler/cmake-3.23.3/bin/cmake -P cmake_install.cmake
+-- Install configuration: "Release"
+-- Up-to-date: /public/home/xdcup_a15/projects/adGraph/dist/lib64/libnvgraph.so
+-- Up-to-date: /public/home/xdcup_a15/projects/adGraph/dist/include/nvgraph/nvgraph.h
+-- Up-to-date: /public/home/xdcup_a15/projects/adGraph/dist/include/nvgraph/test_opt_utils.cuh
+Build completed successfully!
+Library installed to: /public/home/xdcup_a15/projects/adGraph/dist
+Fri Nov 28 16:09:51 CST 2025
